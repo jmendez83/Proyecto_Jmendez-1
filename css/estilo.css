@@ -1,0 +1,788 @@
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+nav{
+   padding: 2rem;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color:white;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+
+nav li a:hover {
+    color:#EBFF00;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li{
+    display: inline-block;
+}
+
+li a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: black;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    line-height: 6rem;
+    color: black;
+}
+
+h3{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+/* PAGINA INICIO GRID*/
+
+.containerIndex {
+    height: 90vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap:0 0; 
+    grid-template-areas: 
+      "bgInicio bgInicio bgInicio"
+      "mainGeneral mainGeneral mainGeneral"
+      "footer footer footer"; 
+  }
+
+/* grid header*/
+.bgInicio { 
+    grid-area: bgInicio;
+    background-color: #2669EB;
+    padding-bottom: 3rem;
+    }
+.bgInicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1fr 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "menuPrincipal menuPrincipal menuPrincipal menuPrincipal menuPrincipal"
+          ". textosHeader textosHeader textosHeader ."
+          ". textosHeader textosHeader textosHeader ."
+          ". . botonAmarillo . ."
+          ". . redesInicioUno . .";
+      }
+      
+
+.menuPrincipal {
+          grid-area: menuPrincipal;
+        }
+
+.menuPrincipal {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.menuSuperior{
+    margin: 0 1rem;
+}
+      
+      .botonAmarillo {
+          grid-area: botonAmarillo;
+          margin: 0 auto;
+        }
+      
+      .textosHeader {
+          grid-area: textosHeader;
+          margin: 0 auto;
+        }
+      .introduccionInicio {
+          padding-top: 6rem;
+      }
+      .redesInicioUno {
+          grid-area: redesInicioUno;
+          margin: 0 auto;
+        }
+      
+      
+ /* grid main*/     
+.mainGeneral {
+    grid-area: mainGeneral;
+    }
+
+.portfolioInicio {
+    padding: 3rem;
+        display: grid;
+        margin-bottom: 4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "mainWorkInicio mainWorkInicio mainWorkInicio mainWorkInicio"
+          "mainPortfolio mainPortfolio mainPortfolio mainPortfolio";
+      }
+
+     
+      .mainWorkInicio {
+        padding: 3rem;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "mainInArticle1 mainInArticle2 mainInArticle2 mainInArticle2"
+          "mainInArticle1 mainInArticle2 mainInArticle2 mainInArticle2"
+          "mainInArticle1 mainInArticle2 mainInArticle2 mainInArticle2"; 
+        grid-area: mainWorkInicio; 
+      }
+      .mainInArticle1 {
+        padding: 2rem;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "workInicioTit"
+          "workInicioSubt"
+          "botonAmarillo"; 
+        grid-area: mainInArticle1; 
+      }
+      .workInicioTit { grid-area: workInicioTit; }
+      .workInicioSubt { grid-area: workInicioSubt; }
+      .botonAmarillo { grid-area: botonAmarillo; }
+     
+      .mainInArticle2 {
+        padding: 2rem;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          ". . ."
+          ". parrafoIn2 parrafoIn3"
+          ". parrafoIn2 parrafoIn3"; 
+        grid-area: mainInArticle2; 
+      }
+     
+      .parrafoIn2 {
+          grid-area:
+          parrafoIn2;
+          padding: 1rem;
+        }
+      .parrafoIn3 {
+          grid-area:
+          parrafoIn3;
+          padding: 1rem;
+        }
+
+      
+.mainInArticle1 h4 {
+color: black;
+margin-bottom: 1rem;
+}
+
+.mainInArticle2 p {
+    color: black;
+}
+ 
+/*GRID PORTFOLIO*/
+
+  .mainPortfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "galeriaPortfolio galeriaPortfolio galeriaPortfolio galeriaPortfolio";
+    grid-area: mainPortfolio;
+      }
+      
+      .galeriaPortfolio {
+        grid-area:galeriaPortfolio; }
+
+    .galeriaPortfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+         }
+ 
+/*GRID POTENCIA*/ 
+
+.mainPotencia {
+        background-color:#EBFF00;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.3fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1"
+          "freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1"
+          "freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1 freasePotencia1";
+      }
+      
+      .freasePotencia1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". potencia potencia potencia ."
+          ". potencia potencia potencia ."
+          ". . botonBlanco . .";
+        grid-area: freasePotencia1;
+      }
+      
+      .potencia { grid-area: potencia;
+       margin: 0 auto;
+       margin-bottom: 2rem;
+       text-align: center;
+    }
+
+    .potencia h2 {
+        line-height: normal;
+    }
+      
+      .botonBlanco { grid-area: botonBlanco;
+        margin: 0 auto;}
+      
+          
+  /* grid footer*/
+  .footer {
+    padding: 3rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "footerDatos footerContacto footerlogo2"; 
+    grid-area: footer; 
+  }
+  .footerDatos { grid-area: footerDatos; }
+  .footerContacto { grid-area: footerContacto; }
+  .footerlogo2 { grid-area: footerlogo2; }
+        
+
+      
+/* INICIO SECTION 1*/
+
+.logoPrincipal {
+    padding: 20px 20px;
+}
+
+.redesInicioUno{
+    margin-bottom: 50px;
+    display: inline-block;
+
+}
+
+.redesInicioUno ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.redesInicioUno li a{
+    text-decoration: none;
+}
+
+.contenedor {
+      text-align: center;
+}
+
+.introduccionInicio {
+    text-align: center;
+}
+
+.colorBlanco{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    line-height: 6rem;
+    color: white;
+}
+
+.textoAmarillo {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EBFF00;
+    margin: 30px 0;
+}
+
+.botonAmarillo {
+    text-align: center;
+    background-color: #EBFF00;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    padding: 0.3rem;
+    display: block;
+}
+
+.botonAmarillo a {
+    color:black;
+    text-decoration: none;
+}
+
+.mainWorkArticle2 p {
+    color: black;
+}
+
+
+/*PORTFOLIO*/
+
+.portfolioInicio{
+    background-color: white;
+}
+
+.mainWorkArticle2 h4 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/*POTENCIAMOS*/
+.potenciamosInicio{
+    background-color:#EBFF00;
+}
+.botonBlanco {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+    padding: 0.3rem;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.botonBlanco a {
+    color: black;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: black;
+}
+
+footer h3, h4, p {
+    color: white;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:#EBFF00;
+}
+
+footer p {
+    line-height: 1.5rem;
+}
+
+/*PAGINA 
+SOBRE MI*/
+
+.containerSobreMi {
+    height: 80vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header"
+      "mainSobreMi mainSobreMi mainSobreMi mainSobreMi"
+      "footer footer footer footer"; 
+    grid-area: containerSobreMi; 
+  }
+.header {
+      grid-area: header;
+    }
+.mainSobreMi {
+      grid-area: mainSobreMi;
+    }
+.footer {
+      grid-area: footer;
+    }
+
+.imagen-back-sobremi {
+	background: url(../img/sobre_mi/header.jpg);
+	height: 500px;
+}
+.textoCabeceraSm {
+    text-align: center;
+    padding: 4rem;
+}
+
+.textoCabeceraSm h1 {
+    color: white;
+}
+
+.textoCabeceraSm h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.sobreMiUno p{
+    color: black;
+} 
+
+
+/* grid sobre mi*/
+
+.mainSobreMi {
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "mainQuienSoy mainQuienSoy mainQuienSoy mainQuienSoy"
+      "mainPotencia mainPotencia mainPotencia mainPotencia"; 
+    grid-area: mainSobreMi; 
+  }
+.mainQuienSoy {
+      grid-area: mainQuienSoy;
+    }
+
+.mainPotencia {
+      grid-area: mainPotencia;
+    }
+.mainQuienSoy {
+        padding: 3rem;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "mainQsArticle1 mainQsArticle2 mainQsArticle2 mainQsArticle2"
+          "mainQsArticle1 mainQsArticle2 mainQsArticle2 mainQsArticle2"
+          "mainQsArticle1 mainQsArticle2 mainQsArticle2 mainQsArticle2"; 
+        grid-area: mainQuienSoy; 
+      }
+.mainQsArticle1 {
+        padding: 2rem;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "queHagoSmtit"
+          "queHagoSmSub"
+          "botonAmarillo"; 
+        grid-area: mainQsArticle1; 
+      }
+      .queHagoSmtit { grid-area: queHagoSmtit; }
+      .queHagoSmSub { grid-area: queHagoSmSub; }
+      .botonAmarillo { grid-area: botonAmarillo; }
+     
+.mainQsArticle2 {
+        padding: 2rem;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          ". . ."
+          "parrafoSm1 parrafoSm2 parrafoSm3"
+          "parrafoSm1 parrafoSm2 parrafoSm3"; 
+        grid-area: mainQsArticle2; 
+      }
+.parrafoSm1 {
+          grid-area:
+          parrafoSm1;
+          padding: 1rem;
+        }
+.parrafoSm2 {
+          grid-area:
+          parrafoSm2;
+          padding: 1rem;
+        }
+.parrafoSm3 {
+          grid-area:
+          parrafoSm3;
+          padding: 1rem;
+        }
+
+      
+.mainQsArticle1 h4 {
+color: black;
+margin-bottom: 1rem;
+}
+
+.mainQsArticle2 p {
+    color: black;
+}
+
+
+/*PAGINA SERVICIOS*/
+
+
+.containerServicios {
+  height: 80vh;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header header"
+    "mainServicios mainServicios mainServicios mainServicios"
+    "footer footer footer footer"; 
+  grid-area: containerSobreMi; 
+}
+.header {
+    grid-area: header;
+  }
+.mainSobreMi {
+    grid-area: mainSobreMi;
+  }
+.footer {
+    grid-area: footer;
+  }
+.imagen-back-servicios {
+background:url(../img/servicios/cabecera.jpg);
+}
+
+
+.mainServicios {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "mainQueHago mainQueHago mainQueHago"
+    "mainPotencia mainPotencia mainPotencia"; 
+  grid-area: mainServicios; 
+}
+.mainQueHago {
+  padding: 3rem;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "mainQhArticle1 mainQhArticle2 mainQhArticle2 mainQhArticle2"
+    "mainQhArticle1 mainQhArticle2 mainQhArticle2 mainQhArticle2"
+    "mainQhArticle1 mainQhArticle2 mainQhArticle2 mainQhArticle2"; 
+  grid-area: mainQueHago; 
+}
+.mainQhArticle1 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "queHagoSvTit"
+    "queHagoSvSub"
+    "."; 
+  grid-area: mainQhArticle1; 
+}
+.queHagoSvTit { grid-area: queHagoSvTit; }
+.queHagoSvSub { grid-area: queHagoSvSub; }
+
+.mainQhArticle2 {
+  text-align: center;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "iconoBranding iconoWeb iconoSocial"
+    "iconoBranding iconoWeb iconoSocial"
+    "iconoBranding iconoWeb iconoSocial"; 
+  grid-area: mainQhArticle2; 
+}
+.iconoBranding { grid-area: iconoBranding; }
+.iconoWeb { grid-area: iconoWeb; }
+.iconoSocial { grid-area: iconoSocial; }
+.mainPotencia { grid-area: mainPotencia; }
+
+    
+.mainQhArticle1 h4 {
+color: black;
+margin-bottom: 1rem;
+}
+
+.mainQhArticle2 p {
+  color: black;
+}
+
+
+/*PAGINA PORTFOLIO*/
+.sectionDosPf {
+    background-color: #2669EB;
+    text-align: center;
+    padding: 100px 0;
+}
+.imagen-portfolio {
+	display: inline-block;
+	margin: 20px;
+}
+
+/* PAGINA CONTACTO*/
+
+.sectionDosContact {
+    padding: 100px 0;
+    background-color: #EBFF00;
+}
+
+#formulario {
+	text-align: center;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* media queries*/
+
+/*index*/
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+  
+  .mainWorkInicio{
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.3fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "mainInArticle1 "
+        "mainInArticle2"; 
+      grid-area: mainWorkInicio; 
+    }
+
+    .mainInArticle1 {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "workInicioTit"
+        "workInicioSubt"
+        "botonAmarillo"; 
+      grid-area: mainInArticle1; 
+    }
+   
+    .mainInArticle2 {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "parrafoIn2"
+        "parrafoIn3"; 
+      grid-area: mainInArticle2; 
+    }
+   
+}
+
+/* MQ footer*/
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+
+.footer {
+  padding: 3rem;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "footerDatos"
+    "footerContacto"
+    "footerlogo2"; 
+  grid-area: footer; }
+}
+
+  /*MQ sobre mi*/
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+  
+  .mainQuienSoy{
+      padding: 2rem;
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.3fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "mainQsArticle1 "
+        "mainQsArticle2"; 
+      grid-area: mainQuienSoy; 
+    }
+
+.mainQsArticle1 {
+      padding: 2rem;
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "queHagoSmtit"
+        "queHagoSmSub"
+        "botonAmarillo"; 
+      grid-area: mainQsArticle1; 
+    }
+   
+.mainQsArticle2 {
+      padding: 2rem;
+      display: grid; 
+      grid-template-columns:1fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "parrafoSm1"
+        "parrafoSm2"
+        "parrafoSm3"; 
+      grid-area: mainQsArticle2; 
+    }
+
+}
