@@ -72,6 +72,30 @@ h3{
     
 }
 
+/* menu bootstrap*/
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.bg-dark {
+--bs-bg-opacity:0;
+}
+
+.navbar-collapse {
+  flex-grow:0;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
 /* PAGINA INICIO GRID*/
 
 .containerIndex {
@@ -95,7 +119,7 @@ h3{
 .bgInicio {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1.5fr 1fr 0.5fr 0.5fr;
+        grid-template-rows: auto 1.5fr 1fr 0.5fr 0.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -113,9 +137,7 @@ h3{
 
 .menuPrincipal {
     padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
+    
 }
 
 .menuSuperior{
@@ -225,9 +247,6 @@ h3{
           parrafoIn3;
           padding: 1rem;
         }
-.mainInArticle2 {
-  background: linear-gradient(to bottom, grey, white);
-}
       
 .mainInArticle1 h4 {
 color: black;
